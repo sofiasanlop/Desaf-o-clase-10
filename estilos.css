@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body{
+    background-color: rgb(241, 169, 141);
+}
+
+
+/* header */
+.header{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(233, 231, 231);
+}
+
+.header{
+    position: fixed;
+    top: 0px;
+    right: 0%;
+}
+
+.logo{
+    height: 70px;
+    width: 20%;
+    /* background-color: orange; */
+    float: left;
+    /* color: #000;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif; */
+}
+
+.imgLogo{
+    width: 100%;
+    height: 70px;
+}
+
+
+/* nav */
+nav{
+    height: 80px;
+    width: 80%;
+    float:right;
+}
+
+nav ul{
+    list-style: none;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: left;
+}
+
+nav a{
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Arimo', sans-serif;
+    letter-spacing: 2px;
+}
+
+nav ul li{
+    display: inline-block;
+    /* background-color: rgb(255, 90, 30); */
+    padding: 23px;
+}
+
+nav li a:hover{
+    color: #fff;
+}
+
+
+/* main */
+main{
+    height: 600px;
+    width: 100%;
+    background-image: url(./Fotos/bikini.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+h1{
+    border: 1px solid #333;
+    font-size: 25px;
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+    padding: 20px 20px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h1 a{
+    text-decoration: none;
+    /* background-color: greenyellow; */
+    color: #000;
+
+}
+
+.contenedor{
+    background-color: beige;
+    min-height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "img1 img2 img3 img4"
+    ;
+    grid-column-gap: 30px;
+    padding: 30px;
+}
+
+.img{
+    border: 2px solid #000;
+    background-color: yellow;
+}
+
+.img1{
+    grid-area: img1;
+    background-image: url(fotos/IMG_20211025_133838735.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img2{
+    grid-area: img2;
+    background-image: url(fotos/IMG_20211025_134452750.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img3{
+    grid-area: img3;
+    background-image: url(fotos/IMG_20211104_153607820.jpg);
+    background-size: cover;
+    background-position:right;
+}
+.img4{
+    grid-area: img4;
+    background-image: url(fotos/IMG_20211104_160640782.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item{
+    background-color: violet;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+/* footer inicio*/
+.footer{
+    height: 400px;
+    width: 100%;
+    background-color: #fff;
+    white-space: pre;
+}
+
+.footer li {
+    list-style: none;
+    text-align: center;
+}
+
+.footer a{
+    color: black;
+    text-decoration: none;
+}
+/* footer fin */
+
+#contacto{
+    background-color: thistle;
+    white-space:pre;
+    display: flex;
+    justify-content: center;
+}
+
+#titulo{
+    height: 150px;
+}
+
+/* Guía de talles inicio */
+#talles{
+    height: 300px;
+    background-color: thistle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Guía de talles fin */
+
+
+/* Media queries inicio */
+
+@media only screen and (min-width:360px) and (max-width:599px){
+    .contenedor{
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+    .img1{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .img2{
+        grid-column: 3/5;
+        grid-row: 1/3;
+    }
+    .img3{
+        visibility: hidden;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .img4{
+        visibility: hidden;
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+    .img5{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .img6{
+        grid-column: 3/5;
+        grid-row: 1/3;
+    }
+    .img7{
+        visibility: hidden;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .img8{
+        visibility: hidden;
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+    .img9{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .img10{
+        grid-column: 3/5;
+        grid-row: 1/3;
+    }
+    .img11{
+        visibility: hidden;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .img12{
+        visibility: hidden;
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+}
+
+@media only screen and (min-width:1024) and (max-width:1200){
+    .contenedor{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+}
+
+/* Media queries fin */
+
+
+
+
+
