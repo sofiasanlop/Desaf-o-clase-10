@@ -1,0 +1,46 @@
+header {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(233, 231, 231);
+    position: fixed;
+    top: 0px;
+    right: 0%;
+    & .logo{
+        height: 70px;
+        width: 20%;
+        float: left;
+        /* color: #000;
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif; */
+        & .imgLogo{
+            width: 100%;
+            height: 70px;
+        }
+    }
+    & nav{
+        height: 80px;
+        width: 80%;
+        float:right;
+        & ul{
+            list-style: none;
+            /* background-color: blue; */
+            display: flex;
+            justify-content: left;
+            & li{
+                display: inline-block;
+                /* background-color: rgb(255, 90, 30); */
+                padding: 23px;
+                a{
+                    color: #000;
+                    text-decoration: none;
+                    font-size: 15px;
+                    font-family: 'Arimo', sans-serif;
+                    letter-spacing: 2px;
+                    & a:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

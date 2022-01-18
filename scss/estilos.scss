@@ -10,73 +10,10 @@
 
 /* body */
 body{
-    background-color: rgb(241, 169, 141);
+    background-color: rgb(243, 243, 243);
 }
 
 
-/* header */
-.header{
-    height: 70px;
-    width: 100%;
-    background-color: rgb(233, 231, 231);
-}
-
-.header{
-    position: fixed;
-    top: 0px;
-    right: 0%;
-}
-
-.logo{
-    height: 70px;
-    width: 20%;
-    /* background-color: orange; */
-    float: left;
-    /* color: #000;
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif; */
-}
-
-.imgLogo{
-    width: 100%;
-    height: 70px;
-}
-
-
-/* nav */
-nav{
-    height: 80px;
-    width: 80%;
-    float:right;
-}
-
-nav ul{
-    list-style: none;
-    /* background-color: blue; */
-    display: flex;
-    justify-content: left;
-}
-
-nav a{
-    color: #000;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: 'Arimo', sans-serif;
-    letter-spacing: 2px;
-}
-
-nav ul li{
-    display: inline-block;
-    /* background-color: rgb(255, 90, 30); */
-    padding: 23px;
-}
-
-nav li a:hover{
-    color: #fff;
-}
-
-
-/* main */
 main{
     height: 600px;
     width: 100%;
@@ -93,55 +30,12 @@ h1{
     padding: 20px 20px;
     letter-spacing: 1px;
     word-spacing: 4px;
-}
-
-h1 a{
-    text-decoration: none;
-    /* background-color: greenyellow; */
-    color: #000;
-
-}
-
-.contenedor{
-    background-color: beige;
-    min-height: 400px;
-    width: 100%;
-    display: grid;
-    grid-template-areas:
-    "img1 img2 img3 img4"
-    ;
-    grid-column-gap: 30px;
-    padding: 30px;
-}
-
-.img{
-    border: 2px solid #000;
-    background-color: yellow;
-}
-
-.img1{
-    grid-area: img1;
-    background-image: url(fotos/IMG_20211025_133838735.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.img2{
-    grid-area: img2;
-    background-image: url(fotos/IMG_20211025_134452750.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.img3{
-    grid-area: img3;
-    background-image: url(fotos/IMG_20211104_153607820.jpg);
-    background-size: cover;
-    background-position:right;
-}
-.img4{
-    grid-area: img4;
-    background-image: url(fotos/IMG_20211104_160640782.jpg);
-    background-size: cover;
-    background-position: center;
+    & a{
+        text-decoration: none;
+        /* background-color: greenyellow; */
+        color: #000;
+    
+    }
 }
 
 .item{
@@ -151,24 +45,6 @@ h1 a{
     justify-content: center;
 }
 
-/* footer inicio*/
-.footer{
-    height: 400px;
-    width: 100%;
-    background-color: #fff;
-    white-space: pre;
-}
-
-.footer li {
-    list-style: none;
-    text-align: center;
-}
-
-.footer a{
-    color: black;
-    text-decoration: none;
-}
-/* footer fin */
 
 #contacto{
     background-color: thistle;
@@ -263,6 +139,3 @@ h1 a{
 }
 
 /* Media queries fin */
-
-
-

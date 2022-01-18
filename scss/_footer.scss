@@ -1,0 +1,17 @@
+footer {
+    height: 400px;
+    width: 100%;
+    background-color: #fff;
+    white-space: pre;
+    & li {
+        list-style: none;
+        text-align: center;
+        & a{
+            color: black;
+            text-decoration: none;
+        }
+    }
+    
+}
+
+

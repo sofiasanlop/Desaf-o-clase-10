@@ -1,0 +1,42 @@
+$var1: cover;
+$var2: center;
+
+.contenedor{
+    background-color: beige;
+    min-height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "img1 img2 img3 img4"
+    ;
+    grid-column-gap: 30px;
+    padding: 30px;
+    & .img{
+        border: 2px solid #000;
+        background-color: yellow;
+        & .img1{
+            grid-area: img1;
+            background-image: url(fotos/IMG_20211025_133838735.jpg);
+            background-size: $var1;
+            background-position: $var2;
+        }
+        & .img2{
+            grid-area: img2;
+            background-image: url(fotos/IMG_20211025_134452750.jpg);
+            background-size: $var1;
+            background-position: $var2;
+        }
+        & .img3{
+            grid-area: img3;
+            background-image: url(fotos/IMG_20211104_153607820.jpg);
+            background-size: $var1;
+            background-position: $var2;
+        }
+        & .img4{
+            grid-area: img4;
+            background-image: url(fotos/IMG_20211104_160640782.jpg);
+            background-size: $var1;
+            background-position: $var2;
+        }
+    }
+}
